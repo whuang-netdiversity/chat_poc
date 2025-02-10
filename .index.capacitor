@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en"   >
+<head>
+  <meta charset="UTF-8">
+  <title>chat_poc</title>
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="Format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <script type="Module" src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.esm.js"></script>
+  <script nomodule src="https://unpkg.com/@ionic/pwa-elements@latest/dist/ionicpwaelements/ionicpwaelements.js"></script>
+  <meta name="theme-color" content="">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link id="mainfont" href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/framework7-bundle.min.css">
+  <link rel="stylesheet" href="css/framework7-keypad.min.css">
+  <link rel="stylesheet" href="css/thorium.min.css">
+  <link rel="stylesheet" href="css/pages/index.css?r=11537">
+  <link rel="stylesheet" href="css/pages/chat.css?r=49705">
+  <link rel="stylesheet" href="css/classes.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body class="" >
+  <div class="apploader"></div>
+  <div id="app" class="framework7-root">
+	<div class="panel-backdrop"></div>
+	<div id="panel-left" class="panel panel-left panel-init panel-cover" data-swipe="true">
+    		<div id="left-panel-page-o-1002" class="page">
+        			<div id="left-panel-page-content" class="page-content"></div>
+    		</div>
+	</div>
+
+	<div id="panel-right" class="panel panel-right panel-init panel-cover" data-swipe="true">
+    		<div id="right-panel-page-o-1003" class="page">
+        			<div id="right-panel-page-content" class="page-content"></div>
+    		</div>
+	</div>
+
+	<div id="view-main" class="view view-main view-init safe-areas" data-url="/">
+		<div id="page" class="page" data-name="index">
+		
+	<div id="navbar-o-1004" class="navbar"><div id="navbg-navbar-o-1004" class="navbar-bg "></div><div id="navbar-inner-o-1006" class="navbar-inner ">
+<div id="left-o-1007" class="left">
+<a class="link" href="/bot/" data-transition="f7-cover-v"><i id="icon-1104" class="fa f7-icons s-6" data-icon="helm" data-transition="f7-cover-v" style="">helm</i></a></div>
+<div id="title-o-1008" class="title ">Title</div>
+<div id="right-o-1009" class="right">
+<a class="link" href="/chat/" data-transition="f7-cover-v"><i id="icon-1099" class="fa f7-icons s-6" data-icon="chat_bubble_text" data-transition="f7-cover-v" style="">chat_bubble_text</i></a></div>
+</div>
+
+</div>
+
+			<div id="page-contents-o-1010" class="page-content">
+
+			<a id="button-1073" class="col button button-round button-fill button-large">Logout</a><div id="div-1080" class="snippet embed-responsive w-100"><audio id="pop" preload="auto">
+              <source src="js/audio/bubblepop-254773.mp3"> 
+</audio></div></div>
+		</div>           	
+         </div>
+</div>
+
+  <div class="login-screen">
+    <div class="view">
+        <div class="page">
+            <div class="page-content login-screen-content">
+                <div class="login-screen-title">chat_poc</div>
+                <div class="block text-center">
+                    
+                    <h1 data-translate="signin">Sign In</h1>
+                </div>
+                <form id="firebase-signin-form" name="firebase-signin-form"
+                    class="list no-hairlines-md firebase-signin-form form-ajax-submit ">
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div data-translate="email" class="item-title item-label" autocomplete="on">email</div>
+                                <div class="item-input-wrap">
+                                    <input data-translate="enteryouremail" id="firebase_email" name="firebase_email"
+                                        class="firebase_email" type="email" maxlength="255" required
+                                        placeholder="Enter your email">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div data-translate="password" class="item-title item-label">password</div>
+                                <div class="item-input-wrap">
+                                    <input id="firebase_password" name="firebase_password" autocomplete="on"
+                                        class="firebase_password" data-translate="enteryourpassword" maxlength="255"
+                                        type="password" required placeholder="Enter your password">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="block custom-block">
+                        <button type="submit" class="col button button-raised button-fill  submit_firebase-signin"
+                            id="submit_firebase-signin" data-translate="signin">Sign In</button>
+                    </div>
+                    <div class="block custom-block">
+    <button class="col button button-raised firebase_register" data-translate="register" href="#">Register</button>
+</div>
+
+                    <div class="block custom-block text-center mt-3">
+                        <a class="link firebase_resetpasswword" data-translate="resetpassword" href="#"><small>Reset my
+                                Password</small></a>
+                    </div>
+                </form>
+                <div class="block-footer mt-3 mb-0">
+                    
+                </div>
+                <div class="flexbox display-flex flex-row justify-content-center align-items-center flex-nowrap">
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup popup-tablet-fullscreen resetpassword-screen">
+    <div class="view">
+        <div class="page">
+
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a class="link popup-close" data-translate="close">Close</a>
+                    </div>
+                    <div class="title" data-translate="resetpassword">Reset Password</div>
+                    <div class="right">
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content login-screen-content">
+                <form id="firebase-resetpw-form" name="firebase-resetpw-form"
+                    class="list firebase-resetpw-form form-ajax-submit ">
+                    <div class="item-content item-input">
+                        <div class="item-inner">
+                            <div class="item-input-wrap">
+                                <input id="firebase_resetpw_email" name="firebase_resetpw_email"
+                                    class="firebase_resetpw_email" type="email" required=""
+                                    data-translate="enteryouremail" placeholder="Enter your email" maxlength="255"
+                                    autocomplete="on" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="block custom-block">
+                        <button type="submit" class="button button-raised button-fill resetpassword-submit"
+                            id="resetpassword-submit" data-translate="resetpassword">Reset Password</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup-tablet-fullscreen register-screen">
+    <div class="view">
+        <div class="page">
+
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a class="link popup-close" data-translate="close">Close</a>
+                    </div>
+                    <div class="title" data-translate="register">Register</div>
+                    <div class="right">
+                        <a id="submit_firebase-register" class="link submit_firebase-register"
+                            data-translate="register">Register</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content login-screen-content">
+                <div class="block text-center">
+                    
+                </div>
+                <form id="firebase-register-form" name="firebase-register-form" class="list firebase-register-form"
+                    autocomplete="on">
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label" data-translate="email">email</div>
+                                <div class="item-input-wrap">
+                                    <input id="firebase_register_email" name="firebase_register_email"
+                                        class="firebase_register_email" type="email" required
+                                        data-translate="enteryouremail" placeholder="Enter your email" maxlength="255"
+                                        autocomplete="on">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label" data-translate="displayname">Display Name</div>
+                                <div class="item-input-wrap">
+                                    <input id="firebase_register_displayname" name="firebase_register_displayname"
+                                        class="firebase_register_displayname" type="text" required
+                                        data-translate="enteryourname" placeholder="Enter your Name" maxlength="255">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label" data-translate="password">Password</div>
+                                <div class="item-input-wrap">
+                                    <input id="firebase_register_password" name="firebase_register_password"
+                                        class="firebase_register_password" type="password" required
+                                        data-translate="enteryourpassword" placeholder="Enter your Password"
+                                        maxlength="255" autocomplete="on">
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label" data-translate="passwordverification">Password
+                                    Verification</div>
+                                <div class="item-input-wrap">
+                                    <input id="firebase_register_password_verification"
+                                        name="firebase_register_password_verification"
+                                        class="firebase_register_password_verification" type="password" required
+                                        data-translate="verifyyourpassword" placeholder="Verify your Password"
+                                        maxlength="255" autocomplete="on">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="popup popup-tablet-fullscreen profile-screen">
+    <div class="view">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                        <a class="link popup-close" data-translate="close">Close</a>
+                    </div>
+                    <div class="title" data-translate="profile">Profile
+                    </div>
+                    <div class="right">
+                        <a class="link submit_firebase-profile" id="submit_firebase-profile"
+                            data-translate="save">Save</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-content login-screen-content">
+                <form id="firebase-profile-form" name="firebase-profile-form"
+                    class="list firebase-profile-form form-ajax-submit ">
+                    <div class="block custom-block text-center">
+                        <img src="img/defaultavatar.png"
+                            class="img rounded-circle img-thumbnail firebase_profile_avatar">
+                        <input type="file" name="firebase_profile_avatar_input" accept="image/png, image/jpeg"
+                            class="firebase_profile_avatar_input" id="firebase_profile_avatar_input">
+                    </div>
+                    <div class="block custom-block text-center">
+                        <progress value="0" id="firebase-upload-progress" class="firebase-upload-progress"
+                            max="100">0%</progress>
+                        <h3 class="firebase-displayname"></h3>
+                    </div>
+                    <ul>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label" data-translate="email">email</div>
+                                <div class="item-input-wrap">
+                                    <input id="firebase_profile_email" name="firebase_profile_email"
+                                        class="firebase_profile_email" type="email" maxlength="255" required readonly
+                                        disabled>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item-content item-input">
+                            <div class="item-inner">
+                                <div class="item-title item-label" data-translate="displayname">Display Name</div>
+                                <div class="item-input-wrap">
+                                    <input id="firebase_profile_displayname" name="firebase_profile_displayname"
+                                        class="firebase_profile_displayname" type="text" required
+                                        data-translate="enteryourname" placeholder="Enter your Name" maxlength="255">
+                                </div>
+                            </div>
+                        </li>
+
+                        
+
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popover firebase-popover">
+    <div class="popover-inner">
+        <div class="list">
+            <ul>
+                <li><a class="list-button item-link firebase_editprofile popover-close" href="#"
+                        data-translate="editprofile">Edit My Profile</a></li>
+                <li><a id="firebasecustomprofile" class="list-button item-link popover-close" href="#" data-transition="f7-cover-v" >Profile Detail</a></li>
+                <li><a class="list-button item-link firebase_resetpasswword popover-close" href="#"
+                        data-translate="resetpassword">Reset Password</a></li>
+                <li><a class="list-button item-link firebase-user-logout popover-close" href="#"
+                        data-translate="logout">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+  
+<!-- 2 FACTORS SCREEN -->
+<div class="popup popup-tablet-fullscreen dbexpress-twofactors">
+    <div class="view">
+        <div class="page">
+            <div class="navbar">
+                <div class="navbar-bg"></div>
+                <div class="navbar-inner">
+                    <div class="left"></div>
+                    <div class="title">PIN</div>
+                    <div class="right"></div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="block passcode-input">
+                    <h2 class="text-center">PIN CODE</h2>
+                    <input class="dbexpress-twofactors-pin" readonly value="____" id="dbexpress-twofactors-pin"
+                        type="text">
+                </div>
+                <div class="numpad-inline-container ripple">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- TEXT VIEWER -->
+<div class="sheet-modal text-viewer-popup">
+    <div class="toolbar">
+        <div class="toolbar-inner">
+            <div class="left">
+                <a class="link" href="#"><i class="link fa f7-icons text-viewer-smaller">textformat_alt</i></a>
+                <a class="link" href="#"><i class=" linkfa f7-icons text-viewer-bigger">textformat_alt</i></a>
+            </div>
+            <div class="right">
+                <a class="link sheet-close"><i class="fa f7-icons">xmark_circle_fill</i></a>
+            </div>
+        </div>
+    </div>
+    <div class="sheet-modal-inner">
+        <div class="block block-text"></div>
+    </div>
+</div>
+
+  <script type="text/javascript" src="js/framework/framework7-bundle.min.js"></script>
+  <script type="text/javascript" src="js/framework/framework7-keypad.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.8.0/firebase-auth.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/8.8.0/firebase-storage.js"></script>
+    <script type="text/javascript" src="js/thorium.config.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.api.min.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.core.min.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.firebase.locales.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.firebase.min.js"></script>
+  <script type="text/javascript" src="js/plugins/thorium.firestore.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script src="capacitor.js"></script>
+  <script>thoriumCorePlugin.appLoaded();</script>
+
+</body>
+</html>
